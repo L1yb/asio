@@ -1,0 +1,5 @@
+/home/liyb/asio/build/CMakeFiles/rebuild_cache.dir
+/home/liyb/asio/build/CMakeFiles/edit_cache.dir
+/home/liyb/asio/build/CMakeFiles/server.dir
+/home/liyb/asio/build/CMakeFiles/client.dir
+/home/liyb/asio/build/CMakeFiles/begin.dir

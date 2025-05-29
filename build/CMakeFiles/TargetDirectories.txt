@@ -1,5 +1,11 @@
 /home/liyb/asio/build/CMakeFiles/rebuild_cache.dir
 /home/liyb/asio/build/CMakeFiles/edit_cache.dir
+/home/liyb/asio/build/CMakeFiles/com_TU_server.dir
+/home/liyb/asio/build/CMakeFiles/async_server.dir
+/home/liyb/asio/build/CMakeFiles/mutithread.dir
+/home/liyb/asio/build/CMakeFiles/udp_async_server.dir
+/home/liyb/asio/build/CMakeFiles/udp_server.dir
 /home/liyb/asio/build/CMakeFiles/server.dir
+/home/liyb/asio/build/CMakeFiles/udp_client.dir
 /home/liyb/asio/build/CMakeFiles/client.dir
 /home/liyb/asio/build/CMakeFiles/begin.dir

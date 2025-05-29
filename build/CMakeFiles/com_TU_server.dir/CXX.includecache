@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/liyb/asio/src/com_TU_server.cpp
+boost/asio.hpp
+-
+iostream
+-
+string
+-
+ctime
+-
+functional
+-
+memory
+-
+

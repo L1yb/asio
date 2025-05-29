@@ -111,6 +111,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named com_TU_server
+
+# Build rule for target.
+com_TU_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 com_TU_server
+.PHONY : com_TU_server
+
+# fast build rule for target.
+com_TU_server/fast:
+	$(MAKE) -f CMakeFiles/com_TU_server.dir/build.make CMakeFiles/com_TU_server.dir/build
+.PHONY : com_TU_server/fast
+
+#=============================================================================
+# Target rules for targets named async_server
+
+# Build rule for target.
+async_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 async_server
+.PHONY : async_server
+
+# fast build rule for target.
+async_server/fast:
+	$(MAKE) -f CMakeFiles/async_server.dir/build.make CMakeFiles/async_server.dir/build
+.PHONY : async_server/fast
+
+#=============================================================================
+# Target rules for targets named mutithread
+
+# Build rule for target.
+mutithread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mutithread
+.PHONY : mutithread
+
+# fast build rule for target.
+mutithread/fast:
+	$(MAKE) -f CMakeFiles/mutithread.dir/build.make CMakeFiles/mutithread.dir/build
+.PHONY : mutithread/fast
+
+#=============================================================================
+# Target rules for targets named udp_async_server
+
+# Build rule for target.
+udp_async_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 udp_async_server
+.PHONY : udp_async_server
+
+# fast build rule for target.
+udp_async_server/fast:
+	$(MAKE) -f CMakeFiles/udp_async_server.dir/build.make CMakeFiles/udp_async_server.dir/build
+.PHONY : udp_async_server/fast
+
+#=============================================================================
+# Target rules for targets named udp_server
+
+# Build rule for target.
+udp_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 udp_server
+.PHONY : udp_server
+
+# fast build rule for target.
+udp_server/fast:
+	$(MAKE) -f CMakeFiles/udp_server.dir/build.make CMakeFiles/udp_server.dir/build
+.PHONY : udp_server/fast
+
+#=============================================================================
 # Target rules for targets named server
 
 # Build rule for target.
@@ -122,6 +187,19 @@ server: cmake_check_build_system
 server/fast:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
+
+#=============================================================================
+# Target rules for targets named udp_client
+
+# Build rule for target.
+udp_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 udp_client
+.PHONY : udp_client
+
+# fast build rule for target.
+udp_client/fast:
+	$(MAKE) -f CMakeFiles/udp_client.dir/build.make CMakeFiles/udp_client.dir/build
+.PHONY : udp_client/fast
 
 #=============================================================================
 # Target rules for targets named client
@@ -148,6 +226,33 @@ begin: cmake_check_build_system
 begin/fast:
 	$(MAKE) -f CMakeFiles/begin.dir/build.make CMakeFiles/begin.dir/build
 .PHONY : begin/fast
+
+src/async_server.o: src/async_server.cpp.o
+
+.PHONY : src/async_server.o
+
+# target to build an object file
+src/async_server.cpp.o:
+	$(MAKE) -f CMakeFiles/async_server.dir/build.make CMakeFiles/async_server.dir/src/async_server.cpp.o
+.PHONY : src/async_server.cpp.o
+
+src/async_server.i: src/async_server.cpp.i
+
+.PHONY : src/async_server.i
+
+# target to preprocess a source file
+src/async_server.cpp.i:
+	$(MAKE) -f CMakeFiles/async_server.dir/build.make CMakeFiles/async_server.dir/src/async_server.cpp.i
+.PHONY : src/async_server.cpp.i
+
+src/async_server.s: src/async_server.cpp.s
+
+.PHONY : src/async_server.s
+
+# target to generate assembly for a file
+src/async_server.cpp.s:
+	$(MAKE) -f CMakeFiles/async_server.dir/build.make CMakeFiles/async_server.dir/src/async_server.cpp.s
+.PHONY : src/async_server.cpp.s
 
 src/begin.o: src/begin.cc.o
 
@@ -203,6 +308,60 @@ src/client.cpp.s:
 	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/src/client.cpp.s
 .PHONY : src/client.cpp.s
 
+src/com_TU_server.o: src/com_TU_server.cpp.o
+
+.PHONY : src/com_TU_server.o
+
+# target to build an object file
+src/com_TU_server.cpp.o:
+	$(MAKE) -f CMakeFiles/com_TU_server.dir/build.make CMakeFiles/com_TU_server.dir/src/com_TU_server.cpp.o
+.PHONY : src/com_TU_server.cpp.o
+
+src/com_TU_server.i: src/com_TU_server.cpp.i
+
+.PHONY : src/com_TU_server.i
+
+# target to preprocess a source file
+src/com_TU_server.cpp.i:
+	$(MAKE) -f CMakeFiles/com_TU_server.dir/build.make CMakeFiles/com_TU_server.dir/src/com_TU_server.cpp.i
+.PHONY : src/com_TU_server.cpp.i
+
+src/com_TU_server.s: src/com_TU_server.cpp.s
+
+.PHONY : src/com_TU_server.s
+
+# target to generate assembly for a file
+src/com_TU_server.cpp.s:
+	$(MAKE) -f CMakeFiles/com_TU_server.dir/build.make CMakeFiles/com_TU_server.dir/src/com_TU_server.cpp.s
+.PHONY : src/com_TU_server.cpp.s
+
+src/mutithread.o: src/mutithread.cpp.o
+
+.PHONY : src/mutithread.o
+
+# target to build an object file
+src/mutithread.cpp.o:
+	$(MAKE) -f CMakeFiles/mutithread.dir/build.make CMakeFiles/mutithread.dir/src/mutithread.cpp.o
+.PHONY : src/mutithread.cpp.o
+
+src/mutithread.i: src/mutithread.cpp.i
+
+.PHONY : src/mutithread.i
+
+# target to preprocess a source file
+src/mutithread.cpp.i:
+	$(MAKE) -f CMakeFiles/mutithread.dir/build.make CMakeFiles/mutithread.dir/src/mutithread.cpp.i
+.PHONY : src/mutithread.cpp.i
+
+src/mutithread.s: src/mutithread.cpp.s
+
+.PHONY : src/mutithread.s
+
+# target to generate assembly for a file
+src/mutithread.cpp.s:
+	$(MAKE) -f CMakeFiles/mutithread.dir/build.make CMakeFiles/mutithread.dir/src/mutithread.cpp.s
+.PHONY : src/mutithread.cpp.s
+
 src/server.o: src/server.cpp.o
 
 .PHONY : src/server.o
@@ -230,6 +389,87 @@ src/server.cpp.s:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/server.cpp.s
 .PHONY : src/server.cpp.s
 
+src/udp_async_server.o: src/udp_async_server.cpp.o
+
+.PHONY : src/udp_async_server.o
+
+# target to build an object file
+src/udp_async_server.cpp.o:
+	$(MAKE) -f CMakeFiles/udp_async_server.dir/build.make CMakeFiles/udp_async_server.dir/src/udp_async_server.cpp.o
+.PHONY : src/udp_async_server.cpp.o
+
+src/udp_async_server.i: src/udp_async_server.cpp.i
+
+.PHONY : src/udp_async_server.i
+
+# target to preprocess a source file
+src/udp_async_server.cpp.i:
+	$(MAKE) -f CMakeFiles/udp_async_server.dir/build.make CMakeFiles/udp_async_server.dir/src/udp_async_server.cpp.i
+.PHONY : src/udp_async_server.cpp.i
+
+src/udp_async_server.s: src/udp_async_server.cpp.s
+
+.PHONY : src/udp_async_server.s
+
+# target to generate assembly for a file
+src/udp_async_server.cpp.s:
+	$(MAKE) -f CMakeFiles/udp_async_server.dir/build.make CMakeFiles/udp_async_server.dir/src/udp_async_server.cpp.s
+.PHONY : src/udp_async_server.cpp.s
+
+src/udp_client.o: src/udp_client.cpp.o
+
+.PHONY : src/udp_client.o
+
+# target to build an object file
+src/udp_client.cpp.o:
+	$(MAKE) -f CMakeFiles/udp_client.dir/build.make CMakeFiles/udp_client.dir/src/udp_client.cpp.o
+.PHONY : src/udp_client.cpp.o
+
+src/udp_client.i: src/udp_client.cpp.i
+
+.PHONY : src/udp_client.i
+
+# target to preprocess a source file
+src/udp_client.cpp.i:
+	$(MAKE) -f CMakeFiles/udp_client.dir/build.make CMakeFiles/udp_client.dir/src/udp_client.cpp.i
+.PHONY : src/udp_client.cpp.i
+
+src/udp_client.s: src/udp_client.cpp.s
+
+.PHONY : src/udp_client.s
+
+# target to generate assembly for a file
+src/udp_client.cpp.s:
+	$(MAKE) -f CMakeFiles/udp_client.dir/build.make CMakeFiles/udp_client.dir/src/udp_client.cpp.s
+.PHONY : src/udp_client.cpp.s
+
+src/udp_server.o: src/udp_server.cpp.o
+
+.PHONY : src/udp_server.o
+
+# target to build an object file
+src/udp_server.cpp.o:
+	$(MAKE) -f CMakeFiles/udp_server.dir/build.make CMakeFiles/udp_server.dir/src/udp_server.cpp.o
+.PHONY : src/udp_server.cpp.o
+
+src/udp_server.i: src/udp_server.cpp.i
+
+.PHONY : src/udp_server.i
+
+# target to preprocess a source file
+src/udp_server.cpp.i:
+	$(MAKE) -f CMakeFiles/udp_server.dir/build.make CMakeFiles/udp_server.dir/src/udp_server.cpp.i
+.PHONY : src/udp_server.cpp.i
+
+src/udp_server.s: src/udp_server.cpp.s
+
+.PHONY : src/udp_server.s
+
+# target to generate assembly for a file
+src/udp_server.cpp.s:
+	$(MAKE) -f CMakeFiles/udp_server.dir/build.make CMakeFiles/udp_server.dir/src/udp_server.cpp.s
+.PHONY : src/udp_server.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -238,18 +478,42 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... com_TU_server"
+	@echo "... async_server"
+	@echo "... mutithread"
+	@echo "... udp_async_server"
+	@echo "... udp_server"
 	@echo "... server"
+	@echo "... udp_client"
 	@echo "... client"
 	@echo "... begin"
+	@echo "... src/async_server.o"
+	@echo "... src/async_server.i"
+	@echo "... src/async_server.s"
 	@echo "... src/begin.o"
 	@echo "... src/begin.i"
 	@echo "... src/begin.s"
 	@echo "... src/client.o"
 	@echo "... src/client.i"
 	@echo "... src/client.s"
+	@echo "... src/com_TU_server.o"
+	@echo "... src/com_TU_server.i"
+	@echo "... src/com_TU_server.s"
+	@echo "... src/mutithread.o"
+	@echo "... src/mutithread.i"
+	@echo "... src/mutithread.s"
 	@echo "... src/server.o"
 	@echo "... src/server.i"
 	@echo "... src/server.s"
+	@echo "... src/udp_async_server.o"
+	@echo "... src/udp_async_server.i"
+	@echo "... src/udp_async_server.s"
+	@echo "... src/udp_client.o"
+	@echo "... src/udp_client.i"
+	@echo "... src/udp_client.s"
+	@echo "... src/udp_server.o"
+	@echo "... src/udp_server.i"
+	@echo "... src/udp_server.s"
 .PHONY : help
 
 

@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/mutithread.dir/src/mutithread.cpp.o  -o mutithread  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 -lpthread 

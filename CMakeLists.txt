@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.16)
 project(asio)
 
 # 设置C++标准
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 查找Boost库
@@ -12,6 +12,14 @@ find_package(Boost REQUIRED COMPONENTS system)
 add_executable(begin src/begin.cc)
 add_executable(client src/client.cpp)
 add_executable(server src/server.cpp)
+add_executable(mutithread src/mutithread.cpp)
+add_executable(async_server src/async_server.cpp)
+add_executable(udp_client src/udp_client.cpp)
+add_executable(udp_server src/udp_server.cpp)
+add_executable(udp_async_server src/udp_async_server.cpp)
+add_executable(com_TU_server src/com_TU_server.cpp)
+
+
 # 包含头文件目录
 target_include_directories(begin PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
@@ -22,3 +30,9 @@ find_package(Threads REQUIRED)
 target_link_libraries(begin PRIVATE Boost::system Threads::Threads)
 target_link_libraries(client PRIVATE Boost::system Threads::Threads)
 target_link_libraries(server PRIVATE Boost::system Threads::Threads)
+target_link_libraries(mutithread PRIVATE Boost::system Threads::Threads)
+target_link_libraries(async_server PRIVATE Boost::system Threads::Threads)
+target_link_libraries(udp_client PRIVATE Boost::system Threads::Threads)
+target_link_libraries(udp_server PRIVATE Boost::system Threads::Threads)
+target_link_libraries(udp_async_server PRIVATE Boost::system Threads::Threads)
+target_link_libraries(com_TU_server PRIVATE Boost::system Threads::Threads)

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/liyb/asio/src/async_server.cpp
+boost/asio.hpp
+-
+iostream
+-
+string
+-
+functional
+-
+ctime
+-
+memory
+-
+

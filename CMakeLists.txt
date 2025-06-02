@@ -1,38 +1,45 @@
 cmake_minimum_required(VERSION 3.16)
-project(asio)
+project(asio VERSION 1.0.0 LANGUAGES CXX)
 
-# 设置C++标准
+# 全局设置
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
-# 查找Boost库
+# 定义输出目录
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+
+# 依赖库
 find_package(Boost REQUIRED COMPONENTS system)
-
-# 添加可执行文件
-add_executable(begin src/begin.cc)
-add_executable(client src/client.cpp)
-add_executable(server src/server.cpp)
-add_executable(mutithread src/mutithread.cpp)
-add_executable(async_server src/async_server.cpp)
-add_executable(udp_client src/udp_client.cpp)
-add_executable(udp_server src/udp_server.cpp)
-add_executable(udp_async_server src/udp_async_server.cpp)
-add_executable(com_TU_server src/com_TU_server.cpp)
-
-
-# 包含头文件目录
-target_include_directories(begin PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/include)
-
-# 查找pthread库
 find_package(Threads REQUIRED)
 
-# 链接库
-target_link_libraries(begin PRIVATE Boost::system Threads::Threads)
-target_link_libraries(client PRIVATE Boost::system Threads::Threads)
-target_link_libraries(server PRIVATE Boost::system Threads::Threads)
-target_link_libraries(mutithread PRIVATE Boost::system Threads::Threads)
-target_link_libraries(async_server PRIVATE Boost::system Threads::Threads)
-target_link_libraries(udp_client PRIVATE Boost::system Threads::Threads)
-target_link_libraries(udp_server PRIVATE Boost::system Threads::Threads)
-target_link_libraries(udp_async_server PRIVATE Boost::system Threads::Threads)
-target_link_libraries(com_TU_server PRIVATE Boost::system Threads::Threads)
+# 全局编译选项
+add_compile_options(-Wall -Wextra)
+
+# 定义公共链接库
+set(COMMON_LIBS 
+    Boost::system 
+    Threads::Threads
+)
+
+# 启用测试
+option(BUILD_TESTS "Build test programs" OFF)
+
+# 添加子目录
+add_subdirectory(src)
+add_subdirectory(example)
+
+# 安装规则
+install(TARGETS
+    RUNTIME DESTINATION bin
+    LIBRARY DESTINATION lib
+    ARCHIVE DESTINATION lib
+)
+
+# 打印配置信息
+message(STATUS "Building ${PROJECT_NAME} version ${PROJECT_VERSION}")
+message(STATUS "C++ standard: ${CMAKE_CXX_STANDARD}")
+message(STATUS "Build type: ${CMAKE_BUILD_TYPE}")
+message(STATUS "Boost libraries: ${Boost_LIBRARIES}")

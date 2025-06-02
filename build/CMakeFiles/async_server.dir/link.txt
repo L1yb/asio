@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/async_server.dir/src/async_server.cpp.o  -o async_server  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 -lpthread 

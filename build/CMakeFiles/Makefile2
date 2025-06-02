@@ -53,278 +53,404 @@ CMAKE_BINARY_DIR = /home/liyb/asio/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/com_TU_server.dir/all
-all: CMakeFiles/async_server.dir/all
-all: CMakeFiles/mutithread.dir/all
-all: CMakeFiles/udp_async_server.dir/all
-all: CMakeFiles/udp_server.dir/all
-all: CMakeFiles/server.dir/all
-all: CMakeFiles/udp_client.dir/all
-all: CMakeFiles/client.dir/all
-all: CMakeFiles/begin.dir/all
+all: src/all
+all: example/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: src/preinstall
+preinstall: example/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/com_TU_server.dir/clean
-clean: CMakeFiles/async_server.dir/clean
-clean: CMakeFiles/mutithread.dir/clean
-clean: CMakeFiles/udp_async_server.dir/clean
-clean: CMakeFiles/udp_server.dir/clean
-clean: CMakeFiles/server.dir/clean
-clean: CMakeFiles/udp_client.dir/clean
-clean: CMakeFiles/client.dir/clean
-clean: CMakeFiles/begin.dir/clean
+clean: src/clean
+clean: example/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/com_TU_server.dir
+# Directory level rules for directory example
 
-# All Build rule for target.
-CMakeFiles/com_TU_server.dir/all:
-	$(MAKE) -f CMakeFiles/com_TU_server.dir/build.make CMakeFiles/com_TU_server.dir/depend
-	$(MAKE) -f CMakeFiles/com_TU_server.dir/build.make CMakeFiles/com_TU_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=7,8 "Built target com_TU_server"
-.PHONY : CMakeFiles/com_TU_server.dir/all
+# Recursive "all" directory target.
+example/all: example/chat/all
+example/all: example/buffers/all
+example/all: example/allocation/all
 
-# Build rule for subdir invocation for target.
-CMakeFiles/com_TU_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/com_TU_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
-.PHONY : CMakeFiles/com_TU_server.dir/rule
+.PHONY : example/all
 
-# Convenience name for target.
-com_TU_server: CMakeFiles/com_TU_server.dir/rule
+# Recursive "preinstall" directory target.
+example/preinstall: example/chat/preinstall
+example/preinstall: example/buffers/preinstall
+example/preinstall: example/allocation/preinstall
 
-.PHONY : com_TU_server
+.PHONY : example/preinstall
 
-# clean rule for target.
-CMakeFiles/com_TU_server.dir/clean:
-	$(MAKE) -f CMakeFiles/com_TU_server.dir/build.make CMakeFiles/com_TU_server.dir/clean
-.PHONY : CMakeFiles/com_TU_server.dir/clean
+# Recursive "clean" directory target.
+example/clean: example/chat/clean
+example/clean: example/buffers/clean
+example/clean: example/allocation/clean
+
+.PHONY : example/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/async_server.dir
+# Directory level rules for directory example/allocation
 
-# All Build rule for target.
-CMakeFiles/async_server.dir/all:
-	$(MAKE) -f CMakeFiles/async_server.dir/build.make CMakeFiles/async_server.dir/depend
-	$(MAKE) -f CMakeFiles/async_server.dir/build.make CMakeFiles/async_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=1,2 "Built target async_server"
-.PHONY : CMakeFiles/async_server.dir/all
+# Recursive "all" directory target.
+example/allocation/all: example/allocation/CMakeFiles/allocation_server.dir/all
 
-# Build rule for subdir invocation for target.
-CMakeFiles/async_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/async_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
-.PHONY : CMakeFiles/async_server.dir/rule
+.PHONY : example/allocation/all
 
-# Convenience name for target.
-async_server: CMakeFiles/async_server.dir/rule
+# Recursive "preinstall" directory target.
+example/allocation/preinstall:
 
-.PHONY : async_server
+.PHONY : example/allocation/preinstall
 
-# clean rule for target.
-CMakeFiles/async_server.dir/clean:
-	$(MAKE) -f CMakeFiles/async_server.dir/build.make CMakeFiles/async_server.dir/clean
-.PHONY : CMakeFiles/async_server.dir/clean
+# Recursive "clean" directory target.
+example/allocation/clean: example/allocation/CMakeFiles/allocation_server.dir/clean
+
+.PHONY : example/allocation/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/mutithread.dir
+# Directory level rules for directory example/buffers
 
-# All Build rule for target.
-CMakeFiles/mutithread.dir/all:
-	$(MAKE) -f CMakeFiles/mutithread.dir/build.make CMakeFiles/mutithread.dir/depend
-	$(MAKE) -f CMakeFiles/mutithread.dir/build.make CMakeFiles/mutithread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=9,10 "Built target mutithread"
-.PHONY : CMakeFiles/mutithread.dir/all
+# Recursive "all" directory target.
+example/buffers/all:
 
-# Build rule for subdir invocation for target.
-CMakeFiles/mutithread.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/mutithread.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
-.PHONY : CMakeFiles/mutithread.dir/rule
+.PHONY : example/buffers/all
 
-# Convenience name for target.
-mutithread: CMakeFiles/mutithread.dir/rule
+# Recursive "preinstall" directory target.
+example/buffers/preinstall:
 
-.PHONY : mutithread
+.PHONY : example/buffers/preinstall
 
-# clean rule for target.
-CMakeFiles/mutithread.dir/clean:
-	$(MAKE) -f CMakeFiles/mutithread.dir/build.make CMakeFiles/mutithread.dir/clean
-.PHONY : CMakeFiles/mutithread.dir/clean
+# Recursive "clean" directory target.
+example/buffers/clean:
+
+.PHONY : example/buffers/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/udp_async_server.dir
+# Directory level rules for directory example/chat
 
-# All Build rule for target.
-CMakeFiles/udp_async_server.dir/all:
-	$(MAKE) -f CMakeFiles/udp_async_server.dir/build.make CMakeFiles/udp_async_server.dir/depend
-	$(MAKE) -f CMakeFiles/udp_async_server.dir/build.make CMakeFiles/udp_async_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=13,14 "Built target udp_async_server"
-.PHONY : CMakeFiles/udp_async_server.dir/all
+# Recursive "all" directory target.
+example/chat/all:
 
-# Build rule for subdir invocation for target.
-CMakeFiles/udp_async_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/udp_async_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
-.PHONY : CMakeFiles/udp_async_server.dir/rule
+.PHONY : example/chat/all
 
-# Convenience name for target.
-udp_async_server: CMakeFiles/udp_async_server.dir/rule
+# Recursive "preinstall" directory target.
+example/chat/preinstall:
 
-.PHONY : udp_async_server
+.PHONY : example/chat/preinstall
 
-# clean rule for target.
-CMakeFiles/udp_async_server.dir/clean:
-	$(MAKE) -f CMakeFiles/udp_async_server.dir/build.make CMakeFiles/udp_async_server.dir/clean
-.PHONY : CMakeFiles/udp_async_server.dir/clean
+# Recursive "clean" directory target.
+example/chat/clean:
+
+.PHONY : example/chat/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/udp_server.dir
+# Directory level rules for directory src
 
-# All Build rule for target.
-CMakeFiles/udp_server.dir/all:
-	$(MAKE) -f CMakeFiles/udp_server.dir/build.make CMakeFiles/udp_server.dir/depend
-	$(MAKE) -f CMakeFiles/udp_server.dir/build.make CMakeFiles/udp_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=17,18 "Built target udp_server"
-.PHONY : CMakeFiles/udp_server.dir/all
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/begin.dir/all
+src/all: src/CMakeFiles/client.dir/all
+src/all: src/CMakeFiles/server.dir/all
+src/all: src/CMakeFiles/udp_server.dir/all
+src/all: src/CMakeFiles/udp_client.dir/all
+src/all: src/CMakeFiles/udp_async_server.dir/all
+src/all: src/CMakeFiles/mutithread.dir/all
+src/all: src/CMakeFiles/async_server.dir/all
+src/all: src/CMakeFiles/com_TU_server.dir/all
 
-# Build rule for subdir invocation for target.
-CMakeFiles/udp_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/udp_server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
-.PHONY : CMakeFiles/udp_server.dir/rule
+.PHONY : src/all
 
-# Convenience name for target.
-udp_server: CMakeFiles/udp_server.dir/rule
+# Recursive "preinstall" directory target.
+src/preinstall:
 
-.PHONY : udp_server
+.PHONY : src/preinstall
 
-# clean rule for target.
-CMakeFiles/udp_server.dir/clean:
-	$(MAKE) -f CMakeFiles/udp_server.dir/build.make CMakeFiles/udp_server.dir/clean
-.PHONY : CMakeFiles/udp_server.dir/clean
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/begin.dir/clean
+src/clean: src/CMakeFiles/client.dir/clean
+src/clean: src/CMakeFiles/server.dir/clean
+src/clean: src/CMakeFiles/udp_server.dir/clean
+src/clean: src/CMakeFiles/udp_client.dir/clean
+src/clean: src/CMakeFiles/udp_async_server.dir/clean
+src/clean: src/CMakeFiles/mutithread.dir/clean
+src/clean: src/CMakeFiles/async_server.dir/clean
+src/clean: src/CMakeFiles/com_TU_server.dir/clean
 
-#=============================================================================
-# Target rules for target CMakeFiles/server.dir
-
-# All Build rule for target.
-CMakeFiles/server.dir/all:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/depend
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=11,12 "Built target server"
-.PHONY : CMakeFiles/server.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/server.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
-.PHONY : CMakeFiles/server.dir/rule
-
-# Convenience name for target.
-server: CMakeFiles/server.dir/rule
-
-.PHONY : server
-
-# clean rule for target.
-CMakeFiles/server.dir/clean:
-	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/clean
-.PHONY : CMakeFiles/server.dir/clean
+.PHONY : src/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/udp_client.dir
+# Target rules for target src/CMakeFiles/begin.dir
 
 # All Build rule for target.
-CMakeFiles/udp_client.dir/all:
-	$(MAKE) -f CMakeFiles/udp_client.dir/build.make CMakeFiles/udp_client.dir/depend
-	$(MAKE) -f CMakeFiles/udp_client.dir/build.make CMakeFiles/udp_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=15,16 "Built target udp_client"
-.PHONY : CMakeFiles/udp_client.dir/all
+src/CMakeFiles/begin.dir/all:
+	$(MAKE) -f src/CMakeFiles/begin.dir/build.make src/CMakeFiles/begin.dir/depend
+	$(MAKE) -f src/CMakeFiles/begin.dir/build.make src/CMakeFiles/begin.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=5,6 "Built target begin"
+.PHONY : src/CMakeFiles/begin.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/udp_client.dir/rule: cmake_check_build_system
+src/CMakeFiles/begin.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/udp_client.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/begin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
-.PHONY : CMakeFiles/udp_client.dir/rule
+.PHONY : src/CMakeFiles/begin.dir/rule
 
 # Convenience name for target.
-udp_client: CMakeFiles/udp_client.dir/rule
-
-.PHONY : udp_client
-
-# clean rule for target.
-CMakeFiles/udp_client.dir/clean:
-	$(MAKE) -f CMakeFiles/udp_client.dir/build.make CMakeFiles/udp_client.dir/clean
-.PHONY : CMakeFiles/udp_client.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/client.dir
-
-# All Build rule for target.
-CMakeFiles/client.dir/all:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/depend
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=5,6 "Built target client"
-.PHONY : CMakeFiles/client.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/client.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
-.PHONY : CMakeFiles/client.dir/rule
-
-# Convenience name for target.
-client: CMakeFiles/client.dir/rule
-
-.PHONY : client
-
-# clean rule for target.
-CMakeFiles/client.dir/clean:
-	$(MAKE) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/clean
-.PHONY : CMakeFiles/client.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/begin.dir
-
-# All Build rule for target.
-CMakeFiles/begin.dir/all:
-	$(MAKE) -f CMakeFiles/begin.dir/build.make CMakeFiles/begin.dir/depend
-	$(MAKE) -f CMakeFiles/begin.dir/build.make CMakeFiles/begin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=3,4 "Built target begin"
-.PHONY : CMakeFiles/begin.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/begin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/begin.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
-.PHONY : CMakeFiles/begin.dir/rule
-
-# Convenience name for target.
-begin: CMakeFiles/begin.dir/rule
+begin: src/CMakeFiles/begin.dir/rule
 
 .PHONY : begin
 
 # clean rule for target.
-CMakeFiles/begin.dir/clean:
-	$(MAKE) -f CMakeFiles/begin.dir/build.make CMakeFiles/begin.dir/clean
-.PHONY : CMakeFiles/begin.dir/clean
+src/CMakeFiles/begin.dir/clean:
+	$(MAKE) -f src/CMakeFiles/begin.dir/build.make src/CMakeFiles/begin.dir/clean
+.PHONY : src/CMakeFiles/begin.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/client.dir
+
+# All Build rule for target.
+src/CMakeFiles/client.dir/all:
+	$(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/depend
+	$(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=7,8 "Built target client"
+.PHONY : src/CMakeFiles/client.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/client.dir/rule
+
+# Convenience name for target.
+client: src/CMakeFiles/client.dir/rule
+
+.PHONY : client
+
+# clean rule for target.
+src/CMakeFiles/client.dir/clean:
+	$(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/clean
+.PHONY : src/CMakeFiles/client.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/server.dir
+
+# All Build rule for target.
+src/CMakeFiles/server.dir/all:
+	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/depend
+	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=13,14 "Built target server"
+.PHONY : src/CMakeFiles/server.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/server.dir/rule
+
+# Convenience name for target.
+server: src/CMakeFiles/server.dir/rule
+
+.PHONY : server
+
+# clean rule for target.
+src/CMakeFiles/server.dir/clean:
+	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/clean
+.PHONY : src/CMakeFiles/server.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/udp_server.dir
+
+# All Build rule for target.
+src/CMakeFiles/udp_server.dir/all:
+	$(MAKE) -f src/CMakeFiles/udp_server.dir/build.make src/CMakeFiles/udp_server.dir/depend
+	$(MAKE) -f src/CMakeFiles/udp_server.dir/build.make src/CMakeFiles/udp_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=19,20 "Built target udp_server"
+.PHONY : src/CMakeFiles/udp_server.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/udp_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/udp_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/udp_server.dir/rule
+
+# Convenience name for target.
+udp_server: src/CMakeFiles/udp_server.dir/rule
+
+.PHONY : udp_server
+
+# clean rule for target.
+src/CMakeFiles/udp_server.dir/clean:
+	$(MAKE) -f src/CMakeFiles/udp_server.dir/build.make src/CMakeFiles/udp_server.dir/clean
+.PHONY : src/CMakeFiles/udp_server.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/udp_client.dir
+
+# All Build rule for target.
+src/CMakeFiles/udp_client.dir/all:
+	$(MAKE) -f src/CMakeFiles/udp_client.dir/build.make src/CMakeFiles/udp_client.dir/depend
+	$(MAKE) -f src/CMakeFiles/udp_client.dir/build.make src/CMakeFiles/udp_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=17,18 "Built target udp_client"
+.PHONY : src/CMakeFiles/udp_client.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/udp_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/udp_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/udp_client.dir/rule
+
+# Convenience name for target.
+udp_client: src/CMakeFiles/udp_client.dir/rule
+
+.PHONY : udp_client
+
+# clean rule for target.
+src/CMakeFiles/udp_client.dir/clean:
+	$(MAKE) -f src/CMakeFiles/udp_client.dir/build.make src/CMakeFiles/udp_client.dir/clean
+.PHONY : src/CMakeFiles/udp_client.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/udp_async_server.dir
+
+# All Build rule for target.
+src/CMakeFiles/udp_async_server.dir/all:
+	$(MAKE) -f src/CMakeFiles/udp_async_server.dir/build.make src/CMakeFiles/udp_async_server.dir/depend
+	$(MAKE) -f src/CMakeFiles/udp_async_server.dir/build.make src/CMakeFiles/udp_async_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=15,16 "Built target udp_async_server"
+.PHONY : src/CMakeFiles/udp_async_server.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/udp_async_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/udp_async_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/udp_async_server.dir/rule
+
+# Convenience name for target.
+udp_async_server: src/CMakeFiles/udp_async_server.dir/rule
+
+.PHONY : udp_async_server
+
+# clean rule for target.
+src/CMakeFiles/udp_async_server.dir/clean:
+	$(MAKE) -f src/CMakeFiles/udp_async_server.dir/build.make src/CMakeFiles/udp_async_server.dir/clean
+.PHONY : src/CMakeFiles/udp_async_server.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/mutithread.dir
+
+# All Build rule for target.
+src/CMakeFiles/mutithread.dir/all:
+	$(MAKE) -f src/CMakeFiles/mutithread.dir/build.make src/CMakeFiles/mutithread.dir/depend
+	$(MAKE) -f src/CMakeFiles/mutithread.dir/build.make src/CMakeFiles/mutithread.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=11,12 "Built target mutithread"
+.PHONY : src/CMakeFiles/mutithread.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/mutithread.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/mutithread.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/mutithread.dir/rule
+
+# Convenience name for target.
+mutithread: src/CMakeFiles/mutithread.dir/rule
+
+.PHONY : mutithread
+
+# clean rule for target.
+src/CMakeFiles/mutithread.dir/clean:
+	$(MAKE) -f src/CMakeFiles/mutithread.dir/build.make src/CMakeFiles/mutithread.dir/clean
+.PHONY : src/CMakeFiles/mutithread.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/async_server.dir
+
+# All Build rule for target.
+src/CMakeFiles/async_server.dir/all:
+	$(MAKE) -f src/CMakeFiles/async_server.dir/build.make src/CMakeFiles/async_server.dir/depend
+	$(MAKE) -f src/CMakeFiles/async_server.dir/build.make src/CMakeFiles/async_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=3,4 "Built target async_server"
+.PHONY : src/CMakeFiles/async_server.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/async_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/async_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/async_server.dir/rule
+
+# Convenience name for target.
+async_server: src/CMakeFiles/async_server.dir/rule
+
+.PHONY : async_server
+
+# clean rule for target.
+src/CMakeFiles/async_server.dir/clean:
+	$(MAKE) -f src/CMakeFiles/async_server.dir/build.make src/CMakeFiles/async_server.dir/clean
+.PHONY : src/CMakeFiles/async_server.dir/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/com_TU_server.dir
+
+# All Build rule for target.
+src/CMakeFiles/com_TU_server.dir/all:
+	$(MAKE) -f src/CMakeFiles/com_TU_server.dir/build.make src/CMakeFiles/com_TU_server.dir/depend
+	$(MAKE) -f src/CMakeFiles/com_TU_server.dir/build.make src/CMakeFiles/com_TU_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=9,10 "Built target com_TU_server"
+.PHONY : src/CMakeFiles/com_TU_server.dir/all
+
+# Build rule for subdir invocation for target.
+src/CMakeFiles/com_TU_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/com_TU_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
+.PHONY : src/CMakeFiles/com_TU_server.dir/rule
+
+# Convenience name for target.
+com_TU_server: src/CMakeFiles/com_TU_server.dir/rule
+
+.PHONY : com_TU_server
+
+# clean rule for target.
+src/CMakeFiles/com_TU_server.dir/clean:
+	$(MAKE) -f src/CMakeFiles/com_TU_server.dir/build.make src/CMakeFiles/com_TU_server.dir/clean
+.PHONY : src/CMakeFiles/com_TU_server.dir/clean
+
+#=============================================================================
+# Target rules for target example/allocation/CMakeFiles/allocation_server.dir
+
+# All Build rule for target.
+example/allocation/CMakeFiles/allocation_server.dir/all:
+	$(MAKE) -f example/allocation/CMakeFiles/allocation_server.dir/build.make example/allocation/CMakeFiles/allocation_server.dir/depend
+	$(MAKE) -f example/allocation/CMakeFiles/allocation_server.dir/build.make example/allocation/CMakeFiles/allocation_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=1,2 "Built target allocation_server"
+.PHONY : example/allocation/CMakeFiles/allocation_server.dir/all
+
+# Build rule for subdir invocation for target.
+example/allocation/CMakeFiles/allocation_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 example/allocation/CMakeFiles/allocation_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
+.PHONY : example/allocation/CMakeFiles/allocation_server.dir/rule
+
+# Convenience name for target.
+allocation_server: example/allocation/CMakeFiles/allocation_server.dir/rule
+
+.PHONY : allocation_server
+
+# clean rule for target.
+example/allocation/CMakeFiles/allocation_server.dir/clean:
+	$(MAKE) -f example/allocation/CMakeFiles/allocation_server.dir/build.make example/allocation/CMakeFiles/allocation_server.dir/clean
+.PHONY : example/allocation/CMakeFiles/allocation_server.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

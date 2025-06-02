@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/udp_async_server.dir/src/udp_async_server.cpp.o  -o udp_async_server  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 -lpthread 

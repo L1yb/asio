@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/com_TU_server.dir/src/com_TU_server.cpp.o  -o com_TU_server  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 -lpthread 

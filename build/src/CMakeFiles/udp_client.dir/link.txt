@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/udp_client.dir/udp_client.cpp.o  -o ../bin/udp_client  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 -lpthread 

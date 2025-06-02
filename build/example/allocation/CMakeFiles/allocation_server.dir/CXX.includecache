@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/liyb/asio/example/allocation/server.cpp
+iostream
+-
+memory
+-
+boost/asio.hpp
+-
+array
+-
+utility
+-
+type_traits
+-
+cstdlib
+-
+algorithm
+-
+

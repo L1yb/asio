@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/liyb/asio/example/chat/chat_client.cpp
+iostream
+-
+cstdlib
+-
+boost/asio.hpp
+-
+chat_message.hpp
+/home/liyb/asio/example/chat/chat_message.hpp
+thread
+-
+deque
+-
+
+/home/liyb/asio/example/chat/chat_message.hpp
+cstdio
+-
+cstdlib
+-
+cstring
+-
+

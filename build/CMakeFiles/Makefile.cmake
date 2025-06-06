@@ -76,5 +76,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/mutithread.dir/DependInfo.cmake"
   "src/CMakeFiles/async_server.dir/DependInfo.cmake"
   "src/CMakeFiles/com_TU_server.dir/DependInfo.cmake"
+  "example/chat/CMakeFiles/chat_server.dir/DependInfo.cmake"
+  "example/chat/CMakeFiles/chat_client.dir/DependInfo.cmake"
+  "example/buffers/CMakeFiles/buffers_reference_counted.dir/DependInfo.cmake"
   "example/allocation/CMakeFiles/allocation_server.dir/DependInfo.cmake"
   )

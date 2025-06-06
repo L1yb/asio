@@ -2,7 +2,8 @@
 cmake_minimum_required(VERSION 3.16)
 
 # 查找所有.cpp文件
-file(GLOB SOURCES "*.cpp")
+set(SOURCES 
+    reference_counted.cpp)
 
 # 为每个源文件创建可执行文件
 foreach(SOURCE_FILE ${SOURCES})

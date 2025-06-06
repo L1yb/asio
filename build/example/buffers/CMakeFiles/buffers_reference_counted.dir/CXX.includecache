@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/liyb/asio/example/buffers/reference_counted.cpp
+iostream
+-
+boost/asio.hpp
+-
+memory
+-
+utility
+-
+vector
+-
+ctime
+-
+string
+-
+

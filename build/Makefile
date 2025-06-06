@@ -274,6 +274,45 @@ com_TU_server/fast:
 .PHONY : com_TU_server/fast
 
 #=============================================================================
+# Target rules for targets named chat_server
+
+# Build rule for target.
+chat_server: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 chat_server
+.PHONY : chat_server
+
+# fast build rule for target.
+chat_server/fast:
+	$(MAKE) -f example/chat/CMakeFiles/chat_server.dir/build.make example/chat/CMakeFiles/chat_server.dir/build
+.PHONY : chat_server/fast
+
+#=============================================================================
+# Target rules for targets named chat_client
+
+# Build rule for target.
+chat_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 chat_client
+.PHONY : chat_client
+
+# fast build rule for target.
+chat_client/fast:
+	$(MAKE) -f example/chat/CMakeFiles/chat_client.dir/build.make example/chat/CMakeFiles/chat_client.dir/build
+.PHONY : chat_client/fast
+
+#=============================================================================
+# Target rules for targets named buffers_reference_counted
+
+# Build rule for target.
+buffers_reference_counted: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 buffers_reference_counted
+.PHONY : buffers_reference_counted
+
+# fast build rule for target.
+buffers_reference_counted/fast:
+	$(MAKE) -f example/buffers/CMakeFiles/buffers_reference_counted.dir/build.make example/buffers/CMakeFiles/buffers_reference_counted.dir/build
+.PHONY : buffers_reference_counted/fast
+
+#=============================================================================
 # Target rules for targets named allocation_server
 
 # Build rule for target.
@@ -307,6 +346,9 @@ help:
 	@echo "... mutithread"
 	@echo "... async_server"
 	@echo "... com_TU_server"
+	@echo "... chat_server"
+	@echo "... chat_client"
+	@echo "... buffers_reference_counted"
 	@echo "... allocation_server"
 .PHONY : help
 

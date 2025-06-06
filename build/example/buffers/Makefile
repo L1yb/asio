@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/liyb/asio/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -124,6 +112,18 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	cd /home/liyb/asio/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles /home/liyb/asio/build/example/buffers/CMakeFiles/progress.marks
@@ -156,18 +156,64 @@ depend:
 	cd /home/liyb/asio/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+example/buffers/CMakeFiles/buffers_reference_counted.dir/rule:
+	cd /home/liyb/asio/build && $(MAKE) -f CMakeFiles/Makefile2 example/buffers/CMakeFiles/buffers_reference_counted.dir/rule
+.PHONY : example/buffers/CMakeFiles/buffers_reference_counted.dir/rule
+
+# Convenience name for target.
+buffers_reference_counted: example/buffers/CMakeFiles/buffers_reference_counted.dir/rule
+
+.PHONY : buffers_reference_counted
+
+# fast build rule for target.
+buffers_reference_counted/fast:
+	cd /home/liyb/asio/build && $(MAKE) -f example/buffers/CMakeFiles/buffers_reference_counted.dir/build.make example/buffers/CMakeFiles/buffers_reference_counted.dir/build
+.PHONY : buffers_reference_counted/fast
+
+reference_counted.o: reference_counted.cpp.o
+
+.PHONY : reference_counted.o
+
+# target to build an object file
+reference_counted.cpp.o:
+	cd /home/liyb/asio/build && $(MAKE) -f example/buffers/CMakeFiles/buffers_reference_counted.dir/build.make example/buffers/CMakeFiles/buffers_reference_counted.dir/reference_counted.cpp.o
+.PHONY : reference_counted.cpp.o
+
+reference_counted.i: reference_counted.cpp.i
+
+.PHONY : reference_counted.i
+
+# target to preprocess a source file
+reference_counted.cpp.i:
+	cd /home/liyb/asio/build && $(MAKE) -f example/buffers/CMakeFiles/buffers_reference_counted.dir/build.make example/buffers/CMakeFiles/buffers_reference_counted.dir/reference_counted.cpp.i
+.PHONY : reference_counted.cpp.i
+
+reference_counted.s: reference_counted.cpp.s
+
+.PHONY : reference_counted.s
+
+# target to generate assembly for a file
+reference_counted.cpp.s:
+	cd /home/liyb/asio/build && $(MAKE) -f example/buffers/CMakeFiles/buffers_reference_counted.dir/build.make example/buffers/CMakeFiles/buffers_reference_counted.dir/reference_counted.cpp.s
+.PHONY : reference_counted.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... install/strip"
+	@echo "... buffers_reference_counted"
+	@echo "... reference_counted.o"
+	@echo "... reference_counted.i"
+	@echo "... reference_counted.s"
 .PHONY : help
 
 

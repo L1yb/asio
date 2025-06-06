@@ -31,12 +31,15 @@
 /home/liyb/asio/build/example/chat/CMakeFiles/list_install_components.dir
 /home/liyb/asio/build/example/chat/CMakeFiles/rebuild_cache.dir
 /home/liyb/asio/build/example/chat/CMakeFiles/edit_cache.dir
-/home/liyb/asio/build/example/buffers/CMakeFiles/install/strip.dir
+/home/liyb/asio/build/example/chat/CMakeFiles/chat_server.dir
+/home/liyb/asio/build/example/chat/CMakeFiles/chat_client.dir
 /home/liyb/asio/build/example/buffers/CMakeFiles/install/local.dir
 /home/liyb/asio/build/example/buffers/CMakeFiles/install.dir
 /home/liyb/asio/build/example/buffers/CMakeFiles/list_install_components.dir
 /home/liyb/asio/build/example/buffers/CMakeFiles/rebuild_cache.dir
 /home/liyb/asio/build/example/buffers/CMakeFiles/edit_cache.dir
+/home/liyb/asio/build/example/buffers/CMakeFiles/install/strip.dir
+/home/liyb/asio/build/example/buffers/CMakeFiles/buffers_reference_counted.dir
 /home/liyb/asio/build/example/allocation/CMakeFiles/install/strip.dir
 /home/liyb/asio/build/example/allocation/CMakeFiles/install.dir
 /home/liyb/asio/build/example/allocation/CMakeFiles/list_install_components.dir

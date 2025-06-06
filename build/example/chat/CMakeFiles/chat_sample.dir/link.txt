@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/chat_sample.dir/sample.cpp.o  -o ../../bin/examples/chat_sample  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0 -lpthread 

@@ -156,6 +156,90 @@ depend:
 	cd /home/liyb/asio/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+example/chat/CMakeFiles/chat_server.dir/rule:
+	cd /home/liyb/asio/build && $(MAKE) -f CMakeFiles/Makefile2 example/chat/CMakeFiles/chat_server.dir/rule
+.PHONY : example/chat/CMakeFiles/chat_server.dir/rule
+
+# Convenience name for target.
+chat_server: example/chat/CMakeFiles/chat_server.dir/rule
+
+.PHONY : chat_server
+
+# fast build rule for target.
+chat_server/fast:
+	cd /home/liyb/asio/build && $(MAKE) -f example/chat/CMakeFiles/chat_server.dir/build.make example/chat/CMakeFiles/chat_server.dir/build
+.PHONY : chat_server/fast
+
+# Convenience name for target.
+example/chat/CMakeFiles/chat_client.dir/rule:
+	cd /home/liyb/asio/build && $(MAKE) -f CMakeFiles/Makefile2 example/chat/CMakeFiles/chat_client.dir/rule
+.PHONY : example/chat/CMakeFiles/chat_client.dir/rule
+
+# Convenience name for target.
+chat_client: example/chat/CMakeFiles/chat_client.dir/rule
+
+.PHONY : chat_client
+
+# fast build rule for target.
+chat_client/fast:
+	cd /home/liyb/asio/build && $(MAKE) -f example/chat/CMakeFiles/chat_client.dir/build.make example/chat/CMakeFiles/chat_client.dir/build
+.PHONY : chat_client/fast
+
+chat_client.o: chat_client.cpp.o
+
+.PHONY : chat_client.o
+
+# target to build an object file
+chat_client.cpp.o:
+	cd /home/liyb/asio/build && $(MAKE) -f example/chat/CMakeFiles/chat_client.dir/build.make example/chat/CMakeFiles/chat_client.dir/chat_client.cpp.o
+.PHONY : chat_client.cpp.o
+
+chat_client.i: chat_client.cpp.i
+
+.PHONY : chat_client.i
+
+# target to preprocess a source file
+chat_client.cpp.i:
+	cd /home/liyb/asio/build && $(MAKE) -f example/chat/CMakeFiles/chat_client.dir/build.make example/chat/CMakeFiles/chat_client.dir/chat_client.cpp.i
+.PHONY : chat_client.cpp.i
+
+chat_client.s: chat_client.cpp.s
+
+.PHONY : chat_client.s
+
+# target to generate assembly for a file
+chat_client.cpp.s:
+	cd /home/liyb/asio/build && $(MAKE) -f example/chat/CMakeFiles/chat_client.dir/build.make example/chat/CMakeFiles/chat_client.dir/chat_client.cpp.s
+.PHONY : chat_client.cpp.s
+
+chat_server.o: chat_server.cpp.o
+
+.PHONY : chat_server.o
+
+# target to build an object file
+chat_server.cpp.o:
+	cd /home/liyb/asio/build && $(MAKE) -f example/chat/CMakeFiles/chat_server.dir/build.make example/chat/CMakeFiles/chat_server.dir/chat_server.cpp.o
+.PHONY : chat_server.cpp.o
+
+chat_server.i: chat_server.cpp.i
+
+.PHONY : chat_server.i
+
+# target to preprocess a source file
+chat_server.cpp.i:
+	cd /home/liyb/asio/build && $(MAKE) -f example/chat/CMakeFiles/chat_server.dir/build.make example/chat/CMakeFiles/chat_server.dir/chat_server.cpp.i
+.PHONY : chat_server.cpp.i
+
+chat_server.s: chat_server.cpp.s
+
+.PHONY : chat_server.s
+
+# target to generate assembly for a file
+chat_server.cpp.s:
+	cd /home/liyb/asio/build && $(MAKE) -f example/chat/CMakeFiles/chat_server.dir/build.make example/chat/CMakeFiles/chat_server.dir/chat_server.cpp.s
+.PHONY : chat_server.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -168,6 +252,14 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... chat_server"
+	@echo "... chat_client"
+	@echo "... chat_client.o"
+	@echo "... chat_client.i"
+	@echo "... chat_client.s"
+	@echo "... chat_server.o"
+	@echo "... chat_server.i"
+	@echo "... chat_server.s"
 .PHONY : help
 
 

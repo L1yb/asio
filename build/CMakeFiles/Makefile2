@@ -116,7 +116,7 @@ example/allocation/clean: example/allocation/CMakeFiles/allocation_server.dir/cl
 # Directory level rules for directory example/buffers
 
 # Recursive "all" directory target.
-example/buffers/all:
+example/buffers/all: example/buffers/CMakeFiles/buffers_reference_counted.dir/all
 
 .PHONY : example/buffers/all
 
@@ -126,7 +126,7 @@ example/buffers/preinstall:
 .PHONY : example/buffers/preinstall
 
 # Recursive "clean" directory target.
-example/buffers/clean:
+example/buffers/clean: example/buffers/CMakeFiles/buffers_reference_counted.dir/clean
 
 .PHONY : example/buffers/clean
 
@@ -134,7 +134,8 @@ example/buffers/clean:
 # Directory level rules for directory example/chat
 
 # Recursive "all" directory target.
-example/chat/all:
+example/chat/all: example/chat/CMakeFiles/chat_server.dir/all
+example/chat/all: example/chat/CMakeFiles/chat_client.dir/all
 
 .PHONY : example/chat/all
 
@@ -144,7 +145,8 @@ example/chat/preinstall:
 .PHONY : example/chat/preinstall
 
 # Recursive "clean" directory target.
-example/chat/clean:
+example/chat/clean: example/chat/CMakeFiles/chat_server.dir/clean
+example/chat/clean: example/chat/CMakeFiles/chat_client.dir/clean
 
 .PHONY : example/chat/clean
 
@@ -216,7 +218,7 @@ src/CMakeFiles/begin.dir/clean:
 src/CMakeFiles/client.dir/all:
 	$(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/depend
 	$(MAKE) -f src/CMakeFiles/client.dir/build.make src/CMakeFiles/client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=7,8 "Built target client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=13,14 "Built target client"
 .PHONY : src/CMakeFiles/client.dir/all
 
 # Build rule for subdir invocation for target.
@@ -243,7 +245,7 @@ src/CMakeFiles/client.dir/clean:
 src/CMakeFiles/server.dir/all:
 	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/depend
 	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=13,14 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=19,20 "Built target server"
 .PHONY : src/CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -270,7 +272,7 @@ src/CMakeFiles/server.dir/clean:
 src/CMakeFiles/udp_server.dir/all:
 	$(MAKE) -f src/CMakeFiles/udp_server.dir/build.make src/CMakeFiles/udp_server.dir/depend
 	$(MAKE) -f src/CMakeFiles/udp_server.dir/build.make src/CMakeFiles/udp_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=19,20 "Built target udp_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=25,26 "Built target udp_server"
 .PHONY : src/CMakeFiles/udp_server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -297,7 +299,7 @@ src/CMakeFiles/udp_server.dir/clean:
 src/CMakeFiles/udp_client.dir/all:
 	$(MAKE) -f src/CMakeFiles/udp_client.dir/build.make src/CMakeFiles/udp_client.dir/depend
 	$(MAKE) -f src/CMakeFiles/udp_client.dir/build.make src/CMakeFiles/udp_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=17,18 "Built target udp_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=23,24 "Built target udp_client"
 .PHONY : src/CMakeFiles/udp_client.dir/all
 
 # Build rule for subdir invocation for target.
@@ -324,7 +326,7 @@ src/CMakeFiles/udp_client.dir/clean:
 src/CMakeFiles/udp_async_server.dir/all:
 	$(MAKE) -f src/CMakeFiles/udp_async_server.dir/build.make src/CMakeFiles/udp_async_server.dir/depend
 	$(MAKE) -f src/CMakeFiles/udp_async_server.dir/build.make src/CMakeFiles/udp_async_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=15,16 "Built target udp_async_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=21,22 "Built target udp_async_server"
 .PHONY : src/CMakeFiles/udp_async_server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -351,7 +353,7 @@ src/CMakeFiles/udp_async_server.dir/clean:
 src/CMakeFiles/mutithread.dir/all:
 	$(MAKE) -f src/CMakeFiles/mutithread.dir/build.make src/CMakeFiles/mutithread.dir/depend
 	$(MAKE) -f src/CMakeFiles/mutithread.dir/build.make src/CMakeFiles/mutithread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=11,12 "Built target mutithread"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=17,18 "Built target mutithread"
 .PHONY : src/CMakeFiles/mutithread.dir/all
 
 # Build rule for subdir invocation for target.
@@ -405,7 +407,7 @@ src/CMakeFiles/async_server.dir/clean:
 src/CMakeFiles/com_TU_server.dir/all:
 	$(MAKE) -f src/CMakeFiles/com_TU_server.dir/build.make src/CMakeFiles/com_TU_server.dir/depend
 	$(MAKE) -f src/CMakeFiles/com_TU_server.dir/build.make src/CMakeFiles/com_TU_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=9,10 "Built target com_TU_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=15,16 "Built target com_TU_server"
 .PHONY : src/CMakeFiles/com_TU_server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -424,6 +426,87 @@ com_TU_server: src/CMakeFiles/com_TU_server.dir/rule
 src/CMakeFiles/com_TU_server.dir/clean:
 	$(MAKE) -f src/CMakeFiles/com_TU_server.dir/build.make src/CMakeFiles/com_TU_server.dir/clean
 .PHONY : src/CMakeFiles/com_TU_server.dir/clean
+
+#=============================================================================
+# Target rules for target example/chat/CMakeFiles/chat_server.dir
+
+# All Build rule for target.
+example/chat/CMakeFiles/chat_server.dir/all:
+	$(MAKE) -f example/chat/CMakeFiles/chat_server.dir/build.make example/chat/CMakeFiles/chat_server.dir/depend
+	$(MAKE) -f example/chat/CMakeFiles/chat_server.dir/build.make example/chat/CMakeFiles/chat_server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=11,12 "Built target chat_server"
+.PHONY : example/chat/CMakeFiles/chat_server.dir/all
+
+# Build rule for subdir invocation for target.
+example/chat/CMakeFiles/chat_server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 example/chat/CMakeFiles/chat_server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
+.PHONY : example/chat/CMakeFiles/chat_server.dir/rule
+
+# Convenience name for target.
+chat_server: example/chat/CMakeFiles/chat_server.dir/rule
+
+.PHONY : chat_server
+
+# clean rule for target.
+example/chat/CMakeFiles/chat_server.dir/clean:
+	$(MAKE) -f example/chat/CMakeFiles/chat_server.dir/build.make example/chat/CMakeFiles/chat_server.dir/clean
+.PHONY : example/chat/CMakeFiles/chat_server.dir/clean
+
+#=============================================================================
+# Target rules for target example/chat/CMakeFiles/chat_client.dir
+
+# All Build rule for target.
+example/chat/CMakeFiles/chat_client.dir/all:
+	$(MAKE) -f example/chat/CMakeFiles/chat_client.dir/build.make example/chat/CMakeFiles/chat_client.dir/depend
+	$(MAKE) -f example/chat/CMakeFiles/chat_client.dir/build.make example/chat/CMakeFiles/chat_client.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=9,10 "Built target chat_client"
+.PHONY : example/chat/CMakeFiles/chat_client.dir/all
+
+# Build rule for subdir invocation for target.
+example/chat/CMakeFiles/chat_client.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 example/chat/CMakeFiles/chat_client.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
+.PHONY : example/chat/CMakeFiles/chat_client.dir/rule
+
+# Convenience name for target.
+chat_client: example/chat/CMakeFiles/chat_client.dir/rule
+
+.PHONY : chat_client
+
+# clean rule for target.
+example/chat/CMakeFiles/chat_client.dir/clean:
+	$(MAKE) -f example/chat/CMakeFiles/chat_client.dir/build.make example/chat/CMakeFiles/chat_client.dir/clean
+.PHONY : example/chat/CMakeFiles/chat_client.dir/clean
+
+#=============================================================================
+# Target rules for target example/buffers/CMakeFiles/buffers_reference_counted.dir
+
+# All Build rule for target.
+example/buffers/CMakeFiles/buffers_reference_counted.dir/all:
+	$(MAKE) -f example/buffers/CMakeFiles/buffers_reference_counted.dir/build.make example/buffers/CMakeFiles/buffers_reference_counted.dir/depend
+	$(MAKE) -f example/buffers/CMakeFiles/buffers_reference_counted.dir/build.make example/buffers/CMakeFiles/buffers_reference_counted.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=7,8 "Built target buffers_reference_counted"
+.PHONY : example/buffers/CMakeFiles/buffers_reference_counted.dir/all
+
+# Build rule for subdir invocation for target.
+example/buffers/CMakeFiles/buffers_reference_counted.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 example/buffers/CMakeFiles/buffers_reference_counted.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
+.PHONY : example/buffers/CMakeFiles/buffers_reference_counted.dir/rule
+
+# Convenience name for target.
+buffers_reference_counted: example/buffers/CMakeFiles/buffers_reference_counted.dir/rule
+
+.PHONY : buffers_reference_counted
+
+# clean rule for target.
+example/buffers/CMakeFiles/buffers_reference_counted.dir/clean:
+	$(MAKE) -f example/buffers/CMakeFiles/buffers_reference_counted.dir/build.make example/buffers/CMakeFiles/buffers_reference_counted.dir/clean
+.PHONY : example/buffers/CMakeFiles/buffers_reference_counted.dir/clean
 
 #=============================================================================
 # Target rules for target example/allocation/CMakeFiles/allocation_server.dir

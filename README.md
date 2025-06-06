@@ -196,3 +196,6 @@ io_context -- socket -- acceptor port ip ）-- accept -- read -- write -- close 
 
 # explicit
 
+
+# 强制类型转换
+##  static_cast

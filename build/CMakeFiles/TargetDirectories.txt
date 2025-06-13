@@ -47,3 +47,11 @@
 /home/liyb/asio/build/example/allocation/CMakeFiles/edit_cache.dir
 /home/liyb/asio/build/example/allocation/CMakeFiles/install/local.dir
 /home/liyb/asio/build/example/allocation/CMakeFiles/allocation_server.dir
+/home/liyb/asio/build/example/deferred/CMakeFiles/install/strip.dir
+/home/liyb/asio/build/example/deferred/CMakeFiles/install/local.dir
+/home/liyb/asio/build/example/deferred/CMakeFiles/install.dir
+/home/liyb/asio/build/example/deferred/CMakeFiles/list_install_components.dir
+/home/liyb/asio/build/example/deferred/CMakeFiles/rebuild_cache.dir
+/home/liyb/asio/build/example/deferred/CMakeFiles/edit_cache.dir
+/home/liyb/asio/build/example/deferred/CMakeFiles/deferred_2.dir
+/home/liyb/asio/build/example/deferred/CMakeFiles/deferred_1.dir

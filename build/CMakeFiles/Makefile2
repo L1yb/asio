@@ -77,6 +77,7 @@ clean: example/clean
 example/all: example/chat/all
 example/all: example/buffers/all
 example/all: example/allocation/all
+example/all: example/deferred/all
 
 .PHONY : example/all
 
@@ -84,6 +85,7 @@ example/all: example/allocation/all
 example/preinstall: example/chat/preinstall
 example/preinstall: example/buffers/preinstall
 example/preinstall: example/allocation/preinstall
+example/preinstall: example/deferred/preinstall
 
 .PHONY : example/preinstall
 
@@ -91,6 +93,7 @@ example/preinstall: example/allocation/preinstall
 example/clean: example/chat/clean
 example/clean: example/buffers/clean
 example/clean: example/allocation/clean
+example/clean: example/deferred/clean
 
 .PHONY : example/clean
 
@@ -149,6 +152,26 @@ example/chat/clean: example/chat/CMakeFiles/chat_server.dir/clean
 example/chat/clean: example/chat/CMakeFiles/chat_client.dir/clean
 
 .PHONY : example/chat/clean
+
+#=============================================================================
+# Directory level rules for directory example/deferred
+
+# Recursive "all" directory target.
+example/deferred/all: example/deferred/CMakeFiles/deferred_2.dir/all
+example/deferred/all: example/deferred/CMakeFiles/deferred_1.dir/all
+
+.PHONY : example/deferred/all
+
+# Recursive "preinstall" directory target.
+example/deferred/preinstall:
+
+.PHONY : example/deferred/preinstall
+
+# Recursive "clean" directory target.
+example/deferred/clean: example/deferred/CMakeFiles/deferred_2.dir/clean
+example/deferred/clean: example/deferred/CMakeFiles/deferred_1.dir/clean
+
+.PHONY : example/deferred/clean
 
 #=============================================================================
 # Directory level rules for directory src
@@ -245,7 +268,7 @@ src/CMakeFiles/client.dir/clean:
 src/CMakeFiles/server.dir/all:
 	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/depend
 	$(MAKE) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=19,20 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=23,24 "Built target server"
 .PHONY : src/CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -272,7 +295,7 @@ src/CMakeFiles/server.dir/clean:
 src/CMakeFiles/udp_server.dir/all:
 	$(MAKE) -f src/CMakeFiles/udp_server.dir/build.make src/CMakeFiles/udp_server.dir/depend
 	$(MAKE) -f src/CMakeFiles/udp_server.dir/build.make src/CMakeFiles/udp_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=25,26 "Built target udp_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=29,30 "Built target udp_server"
 .PHONY : src/CMakeFiles/udp_server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -299,7 +322,7 @@ src/CMakeFiles/udp_server.dir/clean:
 src/CMakeFiles/udp_client.dir/all:
 	$(MAKE) -f src/CMakeFiles/udp_client.dir/build.make src/CMakeFiles/udp_client.dir/depend
 	$(MAKE) -f src/CMakeFiles/udp_client.dir/build.make src/CMakeFiles/udp_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=23,24 "Built target udp_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=27,28 "Built target udp_client"
 .PHONY : src/CMakeFiles/udp_client.dir/all
 
 # Build rule for subdir invocation for target.
@@ -326,7 +349,7 @@ src/CMakeFiles/udp_client.dir/clean:
 src/CMakeFiles/udp_async_server.dir/all:
 	$(MAKE) -f src/CMakeFiles/udp_async_server.dir/build.make src/CMakeFiles/udp_async_server.dir/depend
 	$(MAKE) -f src/CMakeFiles/udp_async_server.dir/build.make src/CMakeFiles/udp_async_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=21,22 "Built target udp_async_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=25,26 "Built target udp_async_server"
 .PHONY : src/CMakeFiles/udp_async_server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -353,7 +376,7 @@ src/CMakeFiles/udp_async_server.dir/clean:
 src/CMakeFiles/mutithread.dir/all:
 	$(MAKE) -f src/CMakeFiles/mutithread.dir/build.make src/CMakeFiles/mutithread.dir/depend
 	$(MAKE) -f src/CMakeFiles/mutithread.dir/build.make src/CMakeFiles/mutithread.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=17,18 "Built target mutithread"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=21,22 "Built target mutithread"
 .PHONY : src/CMakeFiles/mutithread.dir/all
 
 # Build rule for subdir invocation for target.
@@ -534,6 +557,60 @@ allocation_server: example/allocation/CMakeFiles/allocation_server.dir/rule
 example/allocation/CMakeFiles/allocation_server.dir/clean:
 	$(MAKE) -f example/allocation/CMakeFiles/allocation_server.dir/build.make example/allocation/CMakeFiles/allocation_server.dir/clean
 .PHONY : example/allocation/CMakeFiles/allocation_server.dir/clean
+
+#=============================================================================
+# Target rules for target example/deferred/CMakeFiles/deferred_2.dir
+
+# All Build rule for target.
+example/deferred/CMakeFiles/deferred_2.dir/all:
+	$(MAKE) -f example/deferred/CMakeFiles/deferred_2.dir/build.make example/deferred/CMakeFiles/deferred_2.dir/depend
+	$(MAKE) -f example/deferred/CMakeFiles/deferred_2.dir/build.make example/deferred/CMakeFiles/deferred_2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=19,20 "Built target deferred_2"
+.PHONY : example/deferred/CMakeFiles/deferred_2.dir/all
+
+# Build rule for subdir invocation for target.
+example/deferred/CMakeFiles/deferred_2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 example/deferred/CMakeFiles/deferred_2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
+.PHONY : example/deferred/CMakeFiles/deferred_2.dir/rule
+
+# Convenience name for target.
+deferred_2: example/deferred/CMakeFiles/deferred_2.dir/rule
+
+.PHONY : deferred_2
+
+# clean rule for target.
+example/deferred/CMakeFiles/deferred_2.dir/clean:
+	$(MAKE) -f example/deferred/CMakeFiles/deferred_2.dir/build.make example/deferred/CMakeFiles/deferred_2.dir/clean
+.PHONY : example/deferred/CMakeFiles/deferred_2.dir/clean
+
+#=============================================================================
+# Target rules for target example/deferred/CMakeFiles/deferred_1.dir
+
+# All Build rule for target.
+example/deferred/CMakeFiles/deferred_1.dir/all:
+	$(MAKE) -f example/deferred/CMakeFiles/deferred_1.dir/build.make example/deferred/CMakeFiles/deferred_1.dir/depend
+	$(MAKE) -f example/deferred/CMakeFiles/deferred_1.dir/build.make example/deferred/CMakeFiles/deferred_1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/liyb/asio/build/CMakeFiles --progress-num=17,18 "Built target deferred_1"
+.PHONY : example/deferred/CMakeFiles/deferred_1.dir/all
+
+# Build rule for subdir invocation for target.
+example/deferred/CMakeFiles/deferred_1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 example/deferred/CMakeFiles/deferred_1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyb/asio/build/CMakeFiles 0
+.PHONY : example/deferred/CMakeFiles/deferred_1.dir/rule
+
+# Convenience name for target.
+deferred_1: example/deferred/CMakeFiles/deferred_1.dir/rule
+
+.PHONY : deferred_1
+
+# clean rule for target.
+example/deferred/CMakeFiles/deferred_1.dir/clean:
+	$(MAKE) -f example/deferred/CMakeFiles/deferred_1.dir/build.make example/deferred/CMakeFiles/deferred_1.dir/clean
+.PHONY : example/deferred/CMakeFiles/deferred_1.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

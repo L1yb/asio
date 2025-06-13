@@ -10,6 +10,7 @@ add_compile_definitions(EXAMPLE_MODE)
 add_subdirectory(chat)
 add_subdirectory(buffers)
 add_subdirectory(allocation)
+add_subdirectory(deferred)
 
 # 安装配置
 install(DIRECTORY ${CMAKE_BINARY_DIR}/bin/examples/

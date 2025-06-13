@@ -52,6 +52,11 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/liyb/asio/build/example/allocation/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/home/liyb/asio/build/example/deferred/cmake_install.cmake")
+endif()
+
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin/examples" TYPE DIRECTORY FILES "/home/liyb/asio/build/bin/examples/" USE_SOURCE_PERMISSIONS)
 endif()

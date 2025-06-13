@@ -325,6 +325,32 @@ allocation_server/fast:
 	$(MAKE) -f example/allocation/CMakeFiles/allocation_server.dir/build.make example/allocation/CMakeFiles/allocation_server.dir/build
 .PHONY : allocation_server/fast
 
+#=============================================================================
+# Target rules for targets named deferred_2
+
+# Build rule for target.
+deferred_2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 deferred_2
+.PHONY : deferred_2
+
+# fast build rule for target.
+deferred_2/fast:
+	$(MAKE) -f example/deferred/CMakeFiles/deferred_2.dir/build.make example/deferred/CMakeFiles/deferred_2.dir/build
+.PHONY : deferred_2/fast
+
+#=============================================================================
+# Target rules for targets named deferred_1
+
+# Build rule for target.
+deferred_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 deferred_1
+.PHONY : deferred_1
+
+# fast build rule for target.
+deferred_1/fast:
+	$(MAKE) -f example/deferred/CMakeFiles/deferred_1.dir/build.make example/deferred/CMakeFiles/deferred_1.dir/build
+.PHONY : deferred_1/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -350,6 +376,8 @@ help:
 	@echo "... chat_client"
 	@echo "... buffers_reference_counted"
 	@echo "... allocation_server"
+	@echo "... deferred_2"
+	@echo "... deferred_1"
 .PHONY : help
 
 

@@ -14,6 +14,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../example/allocation/CMakeLists.txt"
   "../example/buffers/CMakeLists.txt"
   "../example/chat/CMakeLists.txt"
+  "../example/deferred/CMakeLists.txt"
   "../src/CMakeLists.txt"
   "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.71.0/BoostConfigVersion.cmake"
@@ -63,6 +64,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "example/chat/CMakeFiles/CMakeDirectoryInformation.cmake"
   "example/buffers/CMakeFiles/CMakeDirectoryInformation.cmake"
   "example/allocation/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "example/deferred/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -80,4 +82,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "example/chat/CMakeFiles/chat_client.dir/DependInfo.cmake"
   "example/buffers/CMakeFiles/buffers_reference_counted.dir/DependInfo.cmake"
   "example/allocation/CMakeFiles/allocation_server.dir/DependInfo.cmake"
+  "example/deferred/CMakeFiles/deferred_2.dir/DependInfo.cmake"
+  "example/deferred/CMakeFiles/deferred_1.dir/DependInfo.cmake"
   )
